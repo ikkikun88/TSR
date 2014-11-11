@@ -8,7 +8,7 @@ var client = net.connect({port: 8000, host:process.argv[2]},
 });
 
 function proxyConfig(puertoProxy, ipRemota, puertoRemoto){
-	var msg= puertoProxy + " " + ipRemota + ":" + puertoRemoto;
+	var msg= puertoProxy + " " + ipRemota + " " + pertoRemoto;
 	client.write(msg);
 	client.end();
 	}
